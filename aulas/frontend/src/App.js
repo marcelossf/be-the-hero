@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
+
+// JSX => JavaScript XML (Sintaxe do HMTL) (Arquivo HTML dentro de um react)
+// Componente em React => Função que retorna HTML (Pode ter função de JavaScript/CSS...)
+// Propriedade (Atributos) => Atributos repassados para componentes
+
+/** useState -> Retorna um Array com duas posições
+   * Primeira posição -> valor da variável
+   * Segunda posição -> função de atualização do valor
+  */
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello, World! E fora, Bolsonaro!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    return (
+    <Routes />
   );
 }
 
